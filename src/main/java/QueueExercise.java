@@ -36,8 +36,13 @@ public class QueueExercise {
      * implements the Queue interface, such as ArrayDeque. Deques contain all the methods required for both Queue and
      * Stack behavior.
      */
+
+    public static void main(String [] args){
+        
+    }
     public Deque<String> createQueue(){
-        return null;
+        Deque<String> deque = new ArrayDeque<>();
+        return deque;
     }
 
     /**
@@ -46,7 +51,7 @@ public class QueueExercise {
      * @return the length of queue.
      */
     public int getSize(Queue<String> queue){
-        return 0;
+        return queue.size();
     }
 
     /**
@@ -56,7 +61,7 @@ public class QueueExercise {
      * @param item a String that should be added to Queue.
      */
     public void addToEndOfQueue(Queue<String> queue, String item){
-
+        queue.add(item);
     }
 
     /**
@@ -66,7 +71,7 @@ public class QueueExercise {
      * @return the next String due to be removed (polled) from the Queue<String> (the oldest item in the queue.)
      */
     public String removeFromStartOfQueue(Queue<String> queue){
-        return "";
+        return queue.poll();
     }
 
     /**
@@ -76,6 +81,6 @@ public class QueueExercise {
      * @return the next String due to be removed (peeked) from the Queue<String> (the oldest item in the queue.)
      */
     public String getStartOfQueueWithoutRemoving(Queue<String> queue){
-        return "";
+        return queue.peek();
     }
 }
