@@ -40,6 +40,8 @@ public class QueueExercise {
     public static void main(String [] args){
         
     }
+
+    
     public Deque<String> createQueue(){
         Deque<String> deque = new ArrayDeque<>();
         return deque;
